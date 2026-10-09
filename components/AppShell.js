@@ -221,7 +221,6 @@ function Header() {
           <Link href="/company">Company</Link>
         </nav>
         <div className="topbar-actions">
-          <a className="topnav-product-link btn-desktop-only" href={PRODUCT_URL} target="_blank" rel="noreferrer">Product</a>
           <Link className="btn btn-primary btn-desktop-only" href="/contact">Book a Demo</Link>
           <button
             className="hamburger"
@@ -240,7 +239,6 @@ function Header() {
           <a href="/#how-it-works" onClick={close}>How It Works</a>
           <a href="/#trust" onClick={close}>Trust</a>
           <Link href="/company" onClick={close}>Company</Link>
-          <a href={PRODUCT_URL} target="_blank" rel="noreferrer" onClick={close}>Product</a>
           <div className="mobile-nav-divider" />
           <Link href="/contact" onClick={close} className="mobile-nav-cta">Book a Demo</Link>
         </nav>
@@ -501,7 +499,6 @@ function HomeNav() {
           <Link href="/company">Company</Link>
         </nav>
         <div className="hp-nav-actions">
-          <a href={PRODUCT_URL} target="_blank" rel="noreferrer" className="hp-nav-contact">Product</a>
           <Link href="/contact" className="hp-btn hp-btn-primary hp-btn-sm">Book a Demo</Link>
           <button className="hp-nav-toggle" onClick={() => setOpen((o) => !o)} aria-label="Toggle menu" aria-expanded={open}>
             {open ? <X size={20} /> : <Menu size={20} />}
@@ -515,7 +512,6 @@ function HomeNav() {
           <a href="#how-it-works" onClick={close}>How It Works</a>
           <a href="#trust" onClick={close}>Trust</a>
           <Link href="/company" onClick={close}>Company</Link>
-          <a href={PRODUCT_URL} target="_blank" rel="noreferrer" onClick={close}>Product</a>
           <Link href="/contact" onClick={close} className="hp-nav-mobile-cta">Book a Demo</Link>
         </nav>
       )}
